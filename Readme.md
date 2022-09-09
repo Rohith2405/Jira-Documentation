@@ -90,6 +90,7 @@ spec:
    - password(**Token**)
    - receiver(alertmanager path name)
    - project(enter the project key)
+3. Change **namespace** in deployment.yaml,secret.yaml
 
 
 # Testing:
