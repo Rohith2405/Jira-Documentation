@@ -1,0 +1,42 @@
+---
+# Global defaults, applied to all receivers where not explicitly overridden. Optional.
+defaults:
+  # API access fields.
+  api_url: https://developer786.atlassian.net
+  user: rohith24051@gmail.com
+  password: '3RoLGu04ojfHHEkvE4ODB086'
+
+  # The type of JIRA issue to create. Required.
+  issue_type: Task
+  # Issue priority. Optional.
+  priority: Critical
+  # Go template invocation for generating the summary. Required.
+  summary: '{{ template "jira.summary" . }}'
+  # Go template invocation for generating the description. Optional.
+  description: '{{ template "jira.description" . }}'
+  # State to transition into when reopening a closed issue. Required.
+  reopen_state: "To Do"
+  # Do not reopen issues with this resolution. Optional.
+  wont_fix_resolution: "Won't Fix"
+  # Amount of time after being closed that an issue should be reopened, after which, a new issue is created.
+  # Optional (default: always reopen)
+  reopen_duration: 0h
+
+# Receiver definitions. At least one must be defined.
+receivers:
+    # Must match the Alertmanager receiver name. Required.
+  - name: 'observability1'
+    # JIRA project to create the issue in. Required.
+    project: BSRVBLT1
+    # Copy all Prometheus labels into separate JIRA labels. Optional (default: false).
+    add_group_labels: false
+    
+
+ 
+    #
+    # Automatically resolve jira issues when alert is resolved. Optional. If declared, ensure state is not an empty string.
+    auto_resolve:
+      state: 'Done' 
+
+# File containing template definitions. Required.
+template: jiralert.tmpl

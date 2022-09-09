@@ -1,0 +1,21 @@
+apiVersion: operator.victoriametrics.com/v1beta1
+kind: VMAlertmanagerConfig
+metadata:
+  name: jira-config
+  namespace: observability
+  
+spec:
+  route:
+    #group_wait: 30s
+    #group_interval: 5m
+    #repeat_interval: 12h
+    receiver: 'observability1'
+    
+     
+    
+  receivers:
+  - name: 'observability1'
+    webhook_configs:
+    
+    - url:  'http://10.105.163.161:9097/alert'
+      send_resolved: true
