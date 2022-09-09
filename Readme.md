@@ -19,7 +19,7 @@ If a corresponding JIRA issue already exists but is resolved, it is reopened. A 
 
 # Requierment:
 Create on folder and copy the files in this link
-[Github Link](https://github.com/prometheus-community/jiralert)
+[Github Link](https://github.com/Rohith2405/Jira-Documentation)
 
 
 
