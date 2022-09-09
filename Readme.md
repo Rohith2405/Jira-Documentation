@@ -86,9 +86,9 @@ spec:
 2. Enter the details for the following fields
    - namespace
    - api_url
-   - user(mailid used in jira)
+   - user(mail id used in jira)
    - password(**Token**)
-   - receiver(alertmanager path name)
+   - receiver(**alertmanager path name**)
    - project(enter the project key)
 3. Change **namespace** in deployment.yaml,secret.yaml
 
