@@ -84,12 +84,12 @@ spec:
 
 1. Open secret.yaml
 2. Enter the details for the following fields
-       1.namespace
-       2.api_url
-       3.user(mailid used in jira)
-       4.password(Token)
-       5.receiver(alertmanager path name)
-       6.project(enter the project key)
+       namespace
+       - api_url
+       - user(mailid used in jira)
+       - password(Token)
+       - receiver(alertmanager path name)
+       - project(enter the project key)
 
 
 # Testing:
