@@ -47,9 +47,9 @@ receivers:
 
 ## step-by-step procedure:
 
-*1.Enter tha details(kind,apiversion,metadata,namespace) in alertmanager.yaml for the type of metrics you are using
-*2.In receiver add the project you created in jira
-*3.Add jira's webhook URL
+1. Enter tha details(kind,apiversion,metadata,namespace) in alertmanager.yaml for the type of metrics you are using
+2. In receiver add the project you created in jira
+3. Add jira's webhook URL
 
 ## sample.yaml
 
