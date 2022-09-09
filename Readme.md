@@ -11,10 +11,10 @@ If a corresponding JIRA issue already exists but is resolved, it is reopened. A 
 ## step-by-step procedure:
 
 1. Create jira free account
-2. Create == service desk management == project
+2. Create **service desk management** project
 3. Add project name and issue type
-4. Create a new token in jira
-5. Copy the project name and  key for later use
+4. Create a **new token** in jira
+5. Copy the project name and  **key** for later use
 
 
 # Requierment:
@@ -26,12 +26,12 @@ Create on folder and copy the files in this link
 ### CONFIGURATION(Alertmanager):
 The configuration file is essentially a list of receivers matching 1-to-1 all Alertmanager receivers using JIRAlert; plus defaults (in the form of a partially defined receiver); and a pointer to the template file.
 
-==Each receiver must have a unique name (matching the Alertmanager receiver name), JIRA API access fields (URL, username and password)==, a handful of required issue fields (such as the JIRA project and issue summary), some optional issue fields (e.g. priority) and a fields map for other (standard or custom) JIRA fields. Most of these may use Go templating to generate the actual field values based on the contents of the Alertmanager notification. The exact same data structures and functions as those defined in the Alertmanager template reference are available in JIRAlert.
+**Each receiver must have a unique name (matching the Alertmanager receiver name), JIRA API access fields (URL, username and password)**, a handful of required issue fields (such as the JIRA project and issue summary), some optional issue fields (e.g. priority) and a fields map for other (standard or custom) JIRA fields. Most of these may use Go templating to generate the actual field values based on the contents of the Alertmanager notification. The exact same data structures and functions as those defined in the Alertmanager template reference are available in JIRAlert.
 
 
 # ALERTMANAGER CONFIGURATION:
 
-To enable Alertmanager to talk to JIRAlert you need to configure a webhook in Alertmanager. You can do that by adding a ==webhook receiver to your Alertmanager configuration==.
+To enable Alertmanager to talk to JIRAlert you need to configure a webhook in Alertmanager. You can do that by **adding a webhook receiver to your Alertmanager configuration**.
 
 ```
 receivers:
@@ -87,7 +87,7 @@ spec:
    - namespace
    - api_url
    - user(mailid used in jira)
-   - password(Token)
+   - password(**Token**)
    - receiver(alertmanager path name)
    - project(enter the project key)
 
