@@ -11,7 +11,7 @@ If a corresponding JIRA issue already exists but is resolved, it is reopened. A 
 ## step-by-step procedure:
 
 1. Create jira free account
-2. Create ==service desk management== project
+2. Create == service desk management == project
 3. Add project name and issue type
 4. Create a new token in jira
 5. Copy the project name and  key for later use
